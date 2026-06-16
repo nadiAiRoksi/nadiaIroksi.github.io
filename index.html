@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Moja strona</title>
+  <title>Top 5 filmów</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
+      background: #0b1020;
+      color: #e5e7eb;
     }
 
     header {
-      padding: 60px 20px;
       text-align: center;
-      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #f43f5e, #6366f1);
     }
 
     header h1 {
@@ -24,33 +25,49 @@
     }
 
     header p {
-      font-size: 1.2rem;
       opacity: 0.9;
     }
 
-    section {
-      max-width: 800px;
+    .container {
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
+    .movie {
+      background: #111827;
       margin-bottom: 20px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .movie h2 {
+      margin: 0;
+      color: #facc15;
+    }
+
+    .desc {
+      margin-top: 8px;
+      color: #cbd5e1;
+    }
+
+    .rating {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #34d399;
+      min-width: 80px;
+      text-align: right;
     }
 
     footer {
       text-align: center;
       padding: 20px;
+      opacity: 0.6;
       font-size: 0.9rem;
-      opacity: 0.7;
-    }
-
-    a {
-      color: #38bdf8;
     }
   </style>
 </head>
@@ -58,33 +75,56 @@
 <body>
 
 <header>
-  <h1>Hej 👋 Jestem [Twoje imię]</h1>
-  <p>To moja pierwsza strona na GitHub Pages</p>
+  <h1>🎬 Top 5 filmów</h1>
+  <p>Według opinii nastolatków (ranking przykładowy)</p>
 </header>
 
-<section>
-  <div class="card">
-    <h2>O mnie</h2>
-    <p>Tu napisz kilka informacji o sobie – czym się interesujesz, co robisz, czego się uczysz.</p>
+<div class="container">
+
+  <div class="movie">
+    <div>
+      <h2>1. Spider-Man: No Way Home</h2>
+      <div class="desc">Akcja, emocje i multiwersum — jeden z najbardziej lubianych filmów Marvela.</div>
+    </div>
+    <div class="rating">9.5/10</div>
   </div>
 
-  <div class="card">
-    <h2>Moje projekty</h2>
-    <p>Dodaj linki do swoich projektów albo GitHuba.</p>
-    <ul>
-      <li><a href="#">Projekt 1</a></li>
-      <li><a href="#">Projekt 2</a></li>
-    </ul>
+  <div class="movie">
+    <div>
+      <h2>2. Avengers: Endgame</h2>
+      <div class="desc">Finałowa bitwa Avengersów i zakończenie wielu historii.</div>
+    </div>
+    <div class="rating">9.4/10</div>
   </div>
 
-  <div class="card">
-    <h2>Kontakt</h2>
-    <p>Email: twojemail@example.com</p>
+  <div class="movie">
+    <div>
+      <h2>3. Harry Potter i Więzień Azkabanu</h2>
+      <div class="desc">Najbardziej klimatyczna część serii o młodym czarodzieju.</div>
+    </div>
+    <div class="rating">9.2/10</div>
   </div>
-</section>
+
+  <div class="movie">
+    <div>
+      <h2>4. The Batman</h2>
+      <div class="desc">Mroczny klimat Gotham i świetna rola Batmana.</div>
+    </div>
+    <div class="rating">8.9/10</div>
+  </div>
+
+  <div class="movie">
+    <div>
+      <h2>5. Interstellar</h2>
+      <div class="desc">Kosmos, czas i emocjonalna historia o przetrwaniu ludzkości.</div>
+    </div>
+    <div class="rating">9.3/10</div>
+  </div>
+
+</div>
 
 <footer>
-  © 2026 Twoje imię
+  © 2026 – Filmowy ranking stworzony na GitHub Pages
 </footer>
 
 </body>
